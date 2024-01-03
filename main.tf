@@ -6,7 +6,7 @@ resource "aws_instance" "web" {
     user_data = templatefile("./install.sh",{})
 
     tags = {
-      name = "Jenkins-SonarQube"
+      Name = "Jenkins-SonarQube"
     }
     root_block_device {
       volume_size = 40
